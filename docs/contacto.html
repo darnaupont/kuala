@@ -1,13 +1,17 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="assets/css/app.css">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="shortcut icon" type="image/ico" href="assets/img/logos/favicon.ico">
+  <meta name="" content="">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
   <body>
 <header class="menu-header">
   <div class="logo">
@@ -23,11 +27,6 @@
 </header>
 <div class="reveal full" id="menu" data-reveal data-close-on-click="true" data-animation-in="hinge-in-from-left" data-animation-out="slide-out-left">
 <div class="wrapper-menu">
-	<header>
-		<!-- <button class="close-button" data-close aria-label="Close reveal" type="button">
-	    <span aria-hidden="true">&times; </span>
-	  </button> -->
-	</header>
 <div class="content-menu">
 	<div class="grid-x">
 		<div class="medium-6  medium-offset-2 cell ">
@@ -37,11 +36,17 @@
 				<li>shop</li>
 				<li><a href="contacto.html" data-close>contacto</a></li>
 			</ul>
-			<ul class="menu">
-				<li><a href="">ES</a></li>
-				<li><a href="">CA</a></li>
-				<li><a href="">EN</a></li>
-			</ul>
+      <ul class="menu">
+        <li>
+          <a href="../es/.html" >es</a>
+        </li>
+        <li>
+          <a href="../en/.html" >en</a>
+        </li>
+        <li>
+          <a href="../de/.html" >de</a>
+        </li>
+      </ul>
 		</div>
 		<div class="medium-3 cell">
 			<div class="aboutus">
@@ -69,10 +74,10 @@
 </div>
 </div>
 
-<div class="provaZ">
+<div class="menuoff">
   <div class="wrapper-menu">
   <div class="content-menu">
-  	<div class="grid-x">
+    <div class="grid-x">
   		<div class="medium-6  medium-offset-2 cell ">
   			<ul class="vertical menu mainmenu">
   				<li><a href="proyectos.html" data-close>Proyectos</a></li>
@@ -80,11 +85,17 @@
   				<li>shop</li>
   				<li><a href="contacto.html" data-close>contacto</a></li>
   			</ul>
-  			<ul class="menu">
-  				<li><a href="">ES</a></li>
-  				<li><a href="">CA</a></li>
-  				<li><a href="">EN</a></li>
-  			</ul>
+        <ul class="menu">
+          <li>
+            <a href="../es/.html" >es</a>
+          </li>
+          <li>
+            <a href="../en/.html" >en</a>
+          </li>
+          <li>
+            <a href="../de/.html" >de</a>
+          </li>
+        </ul>
   		</div>
   		<div class="medium-3 cell">
   			<div class="aboutus">
@@ -111,35 +122,42 @@
   </div>
 </div>
 </div>
-    <div id="projects">
+    <div class="wrapper" id="contacto">
       <section class="projects">
-        <h2 class="text-center">Trabajemos juntos.</h2>
+        <header>
+          <h2 class="text-center">Trabajemos juntos.</h2>
+        </header>
         <form action="">
           <div class="grid-x">
+            <div class="medium-8 medium-offset-2 cell">
+              <div class="grid-x">
             <div class="medium-6 cell">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name">
+              <input type="text" id="name" name="name" placeholder="Nombre" required>
             </div>
             <div class="medium-6 cell">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" placeholder="e-mail" required>
             </div>
-            <div class="cell">
-                      <label for="textarea">Mensaje</label>
-    
-    
-              <textarea name="" id="" rows="5" placeholder=""></textarea>
+            <div class="small-12 cell">
+            <textarea name="" id="" rows="5" placeholder="Mensaje"></textarea>
             </div>
-          </div>
+    
+          <div class="small-12 cell">
           <p class="text-right">
             <input class="button" type="submit" value="enviar">
           </p>
+          </div>
+                </div>
+        </div>
+    
+          </div>
         </form>
       </section>
     
       <section class="projects">
-        <h2 class="text-center">Síguenos</h2>
-        <div class="grid-x text-center">
+        <header>
+          <h2 class="text-center">Síguenos</h2>
+        </header>
+        <div class="grid-x grid-padding-x text-center">
           <div class="small-6 medium-3 cell">
             <article>
               hola
@@ -167,8 +185,11 @@
       <div id="footer" class="aboutus">
         <div class="grid-x">
           <div class="small-6 medium-3 cell">
-              <a href=""><strong>kualalumpur</strong> <br>
-              agencia de diseño</a>
+            <ul>
+  						<li><a href="">kualalumpur</a></li>
+  						<li>agencia de diseño</li>
+  					</ul>
+
 
 
           </div>

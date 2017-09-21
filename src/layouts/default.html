@@ -2,13 +2,17 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{browserTitle}}</title>
+  <meta name="description" content="{{description}}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  <link rel="shortcut icon" type="image/ico" href="{{root}}assets/img/logos/favicon.ico">
+  <meta name="{{metaName}}" content="{{metaContent}}">
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
   <body>
 <header class="menu-header">
   <div class="logo">
@@ -24,11 +28,6 @@
 </header>
 <div class="reveal full" id="menu" data-reveal data-close-on-click="true" data-animation-in="hinge-in-from-left" data-animation-out="slide-out-left">
 <div class="wrapper-menu">
-	<header>
-		<!-- <button class="close-button" data-close aria-label="Close reveal" type="button">
-	    <span aria-hidden="true">&times; </span>
-	  </button> -->
-	</header>
 <div class="content-menu">
 	<div class="grid-x">
 		<div class="medium-6  medium-offset-2 cell ">
@@ -38,11 +37,17 @@
 				<li>shop</li>
 				<li><a href="contacto.html" data-close>contacto</a></li>
 			</ul>
-			<ul class="menu">
-				<li><a href="">ES</a></li>
-				<li><a href="">CA</a></li>
-				<li><a href="">EN</a></li>
-			</ul>
+      <ul class="menu">
+        <li>
+          <a href="../es/{{currentPage}}.html" {{#ifequal lang 'es'}}class="language-active" {{/ifequal}}>es</a>
+        </li>
+        <li>
+          <a href="../en/{{currentPage}}.html" {{#ifequal lang 'en'}}class="language-active" {{/ifequal}}>en</a>
+        </li>
+        <li>
+          <a href="../de/{{currentPage}}.html" {{#ifequal lang 'de'}}class="language-active" {{/ifequal}}>de</a>
+        </li>
+      </ul>
 		</div>
 		<div class="medium-3 cell">
 			<div class="aboutus">
@@ -70,10 +75,10 @@
 </div>
 </div>
 
-<div class="provaZ">
+<div class="menuoff">
   <div class="wrapper-menu">
   <div class="content-menu">
-  	<div class="grid-x">
+    <div class="grid-x">
   		<div class="medium-6  medium-offset-2 cell ">
   			<ul class="vertical menu mainmenu">
   				<li><a href="proyectos.html" data-close>Proyectos</a></li>
@@ -81,11 +86,17 @@
   				<li>shop</li>
   				<li><a href="contacto.html" data-close>contacto</a></li>
   			</ul>
-  			<ul class="menu">
-  				<li><a href="">ES</a></li>
-  				<li><a href="">CA</a></li>
-  				<li><a href="">EN</a></li>
-  			</ul>
+        <ul class="menu">
+          <li>
+            <a href="../es/{{currentPage}}.html" {{#ifequal lang 'es'}}class="language-active" {{/ifequal}}>es</a>
+          </li>
+          <li>
+            <a href="../en/{{currentPage}}.html" {{#ifequal lang 'en'}}class="language-active" {{/ifequal}}>en</a>
+          </li>
+          <li>
+            <a href="../de/{{currentPage}}.html" {{#ifequal lang 'de'}}class="language-active" {{/ifequal}}>de</a>
+          </li>
+        </ul>
   		</div>
   		<div class="medium-3 cell">
   			<div class="aboutus">
@@ -117,8 +128,11 @@
       <div id="footer" class="aboutus">
         <div class="grid-x">
           <div class="small-6 medium-3 cell">
-              <a href=""><strong>kualalumpur</strong> <br>
-              agencia de diseño</a>
+            <ul>
+  						<li><a href="">kualalumpur</a></li>
+  						<li>agencia de diseño</li>
+  					</ul>
+
 
 
           </div>

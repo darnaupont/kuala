@@ -1,0 +1,97 @@
+.menuoff{
+  top:0;
+  padding-left:12px;
+  background-color: $secondary-color;
+  width:100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+    animation: menuoff 1s 1;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+
+    @keyframes menuoff
+    {
+        0%      {left:0}
+        100%    {left:-100vw;}
+    }
+}
+#menu{
+  background-color: $secondary-color;
+}
+.wrapper-menu{
+  position:relative;
+  height: 100%;
+}
+header{
+  .logo{
+  margin-top:1rem;
+  color:white;}
+  position: absolute;
+  width:100%;
+  top:0;
+}
+.content-menu{
+position: absolute;
+width: 100%;
+top: 50%;
+transform: translateY(-50%);
+
+}
+.mainmenu{
+    color: $white;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    padding-bottom:1rem;
+    line-height: 1.5rem;
+    li{padding-bottom:3.5rem;}
+}
+.close-button{
+  font-size: 3rem;
+  color:$white;
+}
+.menu a{
+  text-transform: uppercase;
+  color: $white;
+  padding-left:0;
+}
+.aboutus{
+  color: $white;
+  ul{
+    padding-bottom:2.5rem;
+  }
+  ul li:first-child{
+    font-weight: bold;
+    text-transform: uppercase;
+    position:relative;
+    padding-bottom:1rem;
+    &:before{
+      content: " ";
+      width: 1.5rem;
+      border-bottom: solid 3px $white;
+      position: absolute;
+      margin-left: -2rem;
+      left: 0;
+      bottom: 1.5rem;
+      z-index: 1;
+    }
+    }
+  li{
+    line-height: 1.2rem;
+    list-style: none;
+  }
+}
+// END menu general
+.menu-header{
+  margin:1rem 2rem;
+  z-index: 9999;
+  position:fixed;
+  .logo{
+    width: 2rem;
+  }
+  .close-button{
+    margin-right: 3rem;
+    z-index: 10;
+  }
+}
+.language-active{font-weight: bold;}
