@@ -1,4 +1,9 @@
 // menu general
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+
+}
+
 #menu{
   background-color: $secondary-color;
 }
@@ -17,8 +22,8 @@ header{
 .content-menu{
 position: absolute;
 width: 100%;
-top: 50%;
-transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 
 }
 .mainmenu{
@@ -69,7 +74,7 @@ transform: translateY(-50%);
   z-index: 9999;
   position:fixed;
   .logo{
-    width: 3rem;
+    width: 6em;
   }
   .close-button{
     margin-right: 3rem;

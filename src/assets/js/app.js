@@ -95,3 +95,27 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 });
+
+
+$(document).ready(function() {
+
+	 var options = {dataAnimationIn: 'fade-in', dataShowDelay: 0};
+   var $modal = $('#menu');//define your variables
+   var delay = 2000;
+
+   //check if session variable exists.
+   //If NOT then call your function.
+   if (!sessionStorage.getItem("is_already_opened_once")) {
+      modalHandler($modal,delay);//call your function
+   }
+
+   function modalHandler($modal,delay){
+      $modal.foundation('open');
+      setTimeout(function(){
+         $modal.foundation('close');
+         //set the session_variable
+         sessionStorage.setItem('is_already_opened_once', true);
+      },delay);
+   }
+
+});
