@@ -70,14 +70,14 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #F7C400 ,
-  secondary: #cc4b37,
+  secondary: #F7C400,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$dark-gray: #303030;
 $black: #303030;
 $white: #fefefe;
 $body-background: $white;
@@ -147,9 +147,9 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
+    'h1': ('font-size': 40),
+    'h2': ('font-size': 30),
+    'h3': ('font-size': 27),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
@@ -860,7 +860,7 @@ $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
   small: 20px,
-  medium: 30px
+  medium: 45px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;

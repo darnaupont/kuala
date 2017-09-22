@@ -98,6 +98,18 @@ $(document).ready(function(){
 
 
 $(document).ready(function() {
+	// function getParameterByName(name) {
+	//     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	//     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	//     results = regex.exec(location.search);
+	//     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	// }
+	//
+	// var KualalumpurV = getParameterByName('Kualalumpur');
+	//
+	// if (KualalumpurV == 'Studio') {
+	// 	alert("Hello! I am an alert box!");
+	// }
 
 	 var options = {dataAnimationIn: 'fade-in', dataShowDelay: 0};
    var $modal = $('#menu');//define your variables
@@ -119,3 +131,19 @@ $(document).ready(function() {
    }
 
 });
+ window.addEventListener('scroll', function(e){
+	 if (window.scrollY > 10){
+		 $('#logotext').addClass('black');
+		 $('#logotext').removeClass('transparent');
+	 }
+	 else{
+		 $('#logotext').addClass('transparent');
+		 $('#logotext').removeClass('black');
+	 }
+ });
+
+var myEl = document.getElementById('yes');
+
+myEl.addEventListener('click', function() {
+			localStorage.setItem("KLmenu", false);
+}, false);

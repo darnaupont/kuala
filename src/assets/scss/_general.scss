@@ -106,7 +106,7 @@ h1,h2,h3,h4,h5,h6{
 // //END PROJECTS
 
 section{
-  margin: 2rem 0;
+  margin: 5em 0;
   header{
     padding:1rem;
     margin-bottom:6.5rem;
@@ -133,34 +133,45 @@ section{
   margin-top: 1rem;
 
   @include breakpoint(medium) {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 #fullpage{
 span{color: $primary-color}
+
   .hero{
-    margin: 0 auto;
+    @include xy-grid-container;
+    margin:0 28%;
     h1{font-size:rem-calc(38); padding-bottom:2rem;}
     h2{text-transform: capitalize; font-size:rem-calc(26)}
     span{color: $primary-color}
     .button{
+      font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
+      border: 2px solid $primary-color;
+      &:hover{
+        background-color: $white;
+        color:$primary-color;
+
+      }
     }
-  }
+
+}
   .client{
       padding:0 2.5rem;
       color: $white;
       background: url('../../assets/img/mobile/fons.jpg') no-repeat center center;
       background-size: cover;
+      h2{font-weight: 400;}
       ul{
         padding-top:0.5rem;
       }
       li{
-            list-style: none;
+          list-style: none;
         &:first-child{
+          font-family: 'Montserrat', sans-serif;
           text-transform: uppercase;
-          font-weight: bold;
           position:relative;
         &:before{
           content: "";
@@ -174,9 +185,11 @@ span{color: $primary-color}
         }
         }
       }
-    a{color:$white; font-size: 1.1rem;}
+    a{color:$white; font-size: 1.1rem; font-family: 'Montserrat', sans-serif;}
     }
-
+  .aboutus{
+    padding-top:0;
+  }
 }
 #nosotros{
   p{margin-bottom:3rem;}
@@ -186,12 +199,14 @@ span{color: $primary-color}
     position:relative;
     height: 100%;
     padding:1rem;
-    padding-top:4rem;
-    background-color: darken($dark-gray, 20%);
-    p{  text-transform: uppercase; color: darken($light-gray, 10%);font-weight: lighter; margin-bottom:0;}
-    h3{color:$light-gray;
-      &:nth-child(4){text-transform: none;}}
-    h5{margin-top:1rem; margin-bottom:0; color: darken($light-gray, 10%); font-weight: lighter;}
+    padding-top:6rem;
+    background-color:$dark-gray;
+    // p{  text-transform: uppercase; color: darken($light-gray, 10%);font-weight: lighter; margin-bottom:0;}
+    h3,h4{color:$light-gray;
+      span:first-child{font-weight: lighter; color: darken($light-gray, 15%) }
+      span:nth-child(3){font-family: 'Lora', serif; letter-spacing: 1px;}}
+
+    // h5{margin-top:1rem; margin-bottom:0; font-weight: lighter;}
     a{
       position:absolute;
       left: 0;
@@ -218,14 +233,15 @@ span{color: $primary-color}
     color: $white;
     background: url('../../assets/img/mobile/fons.jpg') no-repeat center center;
     background-size: cover;
+    h2{font-weight: 400;}
     ul{
       padding-top:0.5rem;
     }
     li{
-          list-style: none;
+        list-style: none;
       &:first-child{
+        font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
-        font-weight: bold;
         position:relative;
       &:before{
         content: "";
@@ -239,13 +255,14 @@ span{color: $primary-color}
       }
       }
     }
-  a{color:$white; font-size: 1.1rem;}
+  a{color:$white; font-size: 1.1rem; font-family: 'Montserrat', sans-serif;}
   }
 .single-content{
   ul{
     padding-top:0.5rem;
     list-style: none;
     margin-left:0;
+    font-size: .9rem;
   }
     :not(li) > ul{
       margin-left:2rem;
@@ -253,7 +270,7 @@ span{color: $primary-color}
   :not(li) > ul > li {
     &:first-child{
       text-transform: uppercase;
-      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
       position:relative;
     &:before{
       content: "";
