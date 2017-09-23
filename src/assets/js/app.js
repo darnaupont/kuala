@@ -142,8 +142,31 @@ $(document).ready(function() {
 	 }
  });
 
-var myEl = document.getElementById('yes');
+// var myEl = document.getElementById('yes');
+//
+// myEl.addEventListener('click', function() {
+// 			localStorage.setItem("KLmenu", false);
+// }, false);
+// /**
+//  * @param String name
+//  * @return String
+//  */
 
-myEl.addEventListener('click', function() {
-			localStorage.setItem("KLmenu", false);
-}, false);
+function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var menu = getParameterByName('menu');
+if (menu){
+		// $('body').removeClass('is-reveal-open');
+		// $('#menu').removeClass('displayBlock');
+
+		var id = '#menu';
+		var modal = new Foundation.Reveal($('#menu'), {animationIn: "none"});
+		modal.toggle();
+		// modal.close();
+		setTimeout(function(){modal.toggle(); }, 100);
+
+}

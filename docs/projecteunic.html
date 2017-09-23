@@ -11,21 +11,17 @@
   <link rel="shortcut icon" type="image/ico" href="assets/img/logos/favicon.ico">
   <meta name="" content="">
   <link rel="stylesheet" href="assets/css/app.css">
-  <script type="text/javascript">
-        window.onload = function() {
-          var menu = localStorage.getItem("KLmenu");
-          if (menu){
-            $('#menuoff').addClass('hiddenmenu');
-            localStorage.setItem("KLmenu", false)
-          }else{
-            $('#menuoff').removeClass('hiddenmenu');
-          localStorage.setItem("KLmenu", true)
-          }
+  <script type='text/javascript'>
 
-        }
+
+  //   window.onload = function() {
+  //   document.getElementById('menuoff').className = 'hiddenmenu';
+  // };
 </script>
+
 </head>
   <body>
+
 <header class="menu-header">
   <div class="mleft">
     <div class="logo">
@@ -102,13 +98,14 @@
   </div>
 
 </header>
-<div class="reveal full" id="menu" data-reveal data-close-on-click="true" data-animation-in="hinge-in-from-left" data-animation-out="slide-out-left">
+    <div class="hola"></div>
+<div id="menu" class="reveal full "  data-reveal data-close-on-click="true" data-animation-in="hinge-in-from-left" data-animation-out="slide-out-left">
 <div class="wrapper-menu">
 <div class="content-menu">
 	<div class="grid-x">
 		<div class="medium-6  medium-offset-2 cell ">
 			<ul class="vertical menu mainmenu">
-				<li><a href="proyectos.html" id="yes">Proyectos</a></li>
+				<li><a href="proyectos.html?menu=Kualalumpur" >Proyectos</a></li>
 				<li><a href="nosotros.html" class="menuButton">Sobre nosotros</a></li>
 				<li><a href="" class="menuButton">shop</a></li>
 				<li><a href="" class="menuButton" >contacto</a></li>
@@ -150,8 +147,7 @@
 </div>
 </div>
 </div>
-
-<div id="menuoff" class="menuoff">
+<!-- <div id="menuoff" class="menuoff">
   <div class="wrapper-menu">
   <div class="content-menu">
     <div class="grid-x">
@@ -198,7 +194,7 @@
   	</div>
   </div>
 </div>
-</div>
+</div> -->
     <div id="singleproject">
       <div class="hero">
         <div class="grid-x">

@@ -14497,135 +14497,159 @@ window.libs = _dependencies2.default;
 (0, _jquery2.default)(document).foundation();
 
 (0, _jquery2.default)(document).ready(function () {
-	(0, _jquery2.default)('#fullpage').fullpage({
-		//Navigation
-		menu: '#menu',
-		lockAnchors: false,
-		anchors: ['firstPage', 'secondPage'],
-		navigation: true,
-		navigationPosition: 'right',
-		navigationTooltips: ['firstSlide', 'secondSlide'],
-		showActiveTooltip: false,
-		slidesNavigation: true,
-		slidesNavPosition: 'bottom',
+		(0, _jquery2.default)('#fullpage').fullpage({
+				//Navigation
+				menu: '#menu',
+				lockAnchors: false,
+				anchors: ['firstPage', 'secondPage'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['firstSlide', 'secondSlide'],
+				showActiveTooltip: false,
+				slidesNavigation: true,
+				slidesNavPosition: 'bottom',
 
-		//Scrolling
-		// hybrid:true,
-		css3: true,
-		scrollingSpeed: 700,
-		autoScrolling: true,
-		fitToSection: false,
-		fitToSectionDelay: 1000,
-		scrollBar: false,
-		easing: 'easeInOutCubic',
-		easingcss3: 'ease',
-		loopBottom: false,
-		loopTop: false,
-		loopHorizontal: true,
-		continuousVertical: false,
-		continuousHorizontal: false,
-		scrollHorizontally: false,
-		interlockedSlides: false,
-		dragAndMove: false,
-		offsetSections: false,
-		resetSliders: false,
-		fadingEffect: false,
-		normalScrollElements: '#element1, .element2',
-		scrollOverflow: false,
-		scrollOverflowReset: false,
-		scrollOverflowOptions: null,
-		touchSensitivity: 15,
-		normalScrollElementTouchThreshold: 5,
-		bigSectionsDestination: null,
+				//Scrolling
+				// hybrid:true,
+				css3: true,
+				scrollingSpeed: 700,
+				autoScrolling: true,
+				fitToSection: false,
+				fitToSectionDelay: 1000,
+				scrollBar: false,
+				easing: 'easeInOutCubic',
+				easingcss3: 'ease',
+				loopBottom: false,
+				loopTop: false,
+				loopHorizontal: true,
+				continuousVertical: false,
+				continuousHorizontal: false,
+				scrollHorizontally: false,
+				interlockedSlides: false,
+				dragAndMove: false,
+				offsetSections: false,
+				resetSliders: false,
+				fadingEffect: false,
+				normalScrollElements: '#element1, .element2',
+				scrollOverflow: false,
+				scrollOverflowReset: false,
+				scrollOverflowOptions: null,
+				touchSensitivity: 15,
+				normalScrollElementTouchThreshold: 5,
+				bigSectionsDestination: null,
 
-		//Accessibility
-		keyboardScrolling: true,
-		animateAnchor: true,
-		recordHistory: true,
+				//Accessibility
+				keyboardScrolling: true,
+				animateAnchor: true,
+				recordHistory: true,
 
-		//Design
-		controlArrows: true,
-		verticalCentered: true,
-		sectionsColor: ['#fff', '#fff'],
-		paddingTop: '3em',
-		paddingBottom: '10px',
-		fixedElements: '#header, .footer',
-		responsiveWidth: 0,
-		responsiveHeight: 0,
-		responsiveSlides: false,
-		parallax: false,
-		parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
+				//Design
+				controlArrows: true,
+				verticalCentered: true,
+				sectionsColor: ['#fff', '#fff'],
+				paddingTop: '3em',
+				paddingBottom: '10px',
+				fixedElements: '#header, .footer',
+				responsiveWidth: 0,
+				responsiveHeight: 0,
+				responsiveSlides: false,
+				parallax: false,
+				parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
 
-		//Custom selectors
-		sectionSelector: '.section',
-		slideSelector: '.slide',
+				//Custom selectors
+				sectionSelector: '.section',
+				slideSelector: '.slide',
 
-		lazyLoading: true,
+				lazyLoading: true,
 
-		//events
-		onLeave: function onLeave(index, nextIndex, direction) {},
-		afterLoad: function afterLoad(anchorLink, index) {},
-		afterRender: function afterRender() {},
-		afterResize: function afterResize() {},
-		afterResponsive: function afterResponsive(isResponsive) {},
-		afterSlideLoad: function afterSlideLoad(anchorLink, index, slideAnchor, slideIndex) {},
-		onSlideLeave: function onSlideLeave(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
-	});
+				//events
+				onLeave: function onLeave(index, nextIndex, direction) {},
+				afterLoad: function afterLoad(anchorLink, index) {},
+				afterRender: function afterRender() {},
+				afterResize: function afterResize() {},
+				afterResponsive: function afterResponsive(isResponsive) {},
+				afterSlideLoad: function afterSlideLoad(anchorLink, index, slideAnchor, slideIndex) {},
+				onSlideLeave: function onSlideLeave(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
+		});
 });
 (0, _jquery2.default)(document).ready(function () {
-	(0, _jquery2.default)('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
-		(0, _jquery2.default)(this).toggleClass('open');
-	});
+		(0, _jquery2.default)('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+				(0, _jquery2.default)(this).toggleClass('open');
+		});
 });
 
 (0, _jquery2.default)(document).ready(function () {
-	// function getParameterByName(name) {
-	//     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-	//     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-	//     results = regex.exec(location.search);
-	//     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-	// }
-	//
-	// var KualalumpurV = getParameterByName('Kualalumpur');
-	//
-	// if (KualalumpurV == 'Studio') {
-	// 	alert("Hello! I am an alert box!");
-	// }
+		// function getParameterByName(name) {
+		//     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		//     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		//     results = regex.exec(location.search);
+		//     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		// }
+		//
+		// var KualalumpurV = getParameterByName('Kualalumpur');
+		//
+		// if (KualalumpurV == 'Studio') {
+		// 	alert("Hello! I am an alert box!");
+		// }
 
-	var options = { dataAnimationIn: 'fade-in', dataShowDelay: 0 };
-	var $modal = (0, _jquery2.default)('#menu'); //define your variables
-	var delay = 2000;
+		var options = { dataAnimationIn: 'fade-in', dataShowDelay: 0 };
+		var $modal = (0, _jquery2.default)('#menu'); //define your variables
+		var delay = 2000;
 
-	//check if session variable exists.
-	//If NOT then call your function.
-	if (!sessionStorage.getItem("is_already_opened_once")) {
-		modalHandler($modal, delay); //call your function
-	}
+		//check if session variable exists.
+		//If NOT then call your function.
+		if (!sessionStorage.getItem("is_already_opened_once")) {
+				modalHandler($modal, delay); //call your function
+		}
 
-	function modalHandler($modal, delay) {
-		$modal.foundation('open');
-		setTimeout(function () {
-			$modal.foundation('close');
-			//set the session_variable
-			sessionStorage.setItem('is_already_opened_once', true);
-		}, delay);
-	}
+		function modalHandler($modal, delay) {
+				$modal.foundation('open');
+				setTimeout(function () {
+						$modal.foundation('close');
+						//set the session_variable
+						sessionStorage.setItem('is_already_opened_once', true);
+				}, delay);
+		}
 });
 window.addEventListener('scroll', function (e) {
-	if (window.scrollY > 10) {
-		(0, _jquery2.default)('#logotext').addClass('black');
-		(0, _jquery2.default)('#logotext').removeClass('transparent');
-	} else {
-		(0, _jquery2.default)('#logotext').addClass('transparent');
-		(0, _jquery2.default)('#logotext').removeClass('black');
-	}
+		if (window.scrollY > 10) {
+				(0, _jquery2.default)('#logotext').addClass('black');
+				(0, _jquery2.default)('#logotext').removeClass('transparent');
+		} else {
+				(0, _jquery2.default)('#logotext').addClass('transparent');
+				(0, _jquery2.default)('#logotext').removeClass('black');
+		}
 });
 
-var myEl = document.getElementById('yes');
+// var myEl = document.getElementById('yes');
+//
+// myEl.addEventListener('click', function() {
+// 			localStorage.setItem("KLmenu", false);
+// }, false);
+// /**
+//  * @param String name
+//  * @return String
+//  */
 
-myEl.addEventListener('click', function () {
-	localStorage.setItem("KLmenu", false);
-}, false);
+function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		    results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var menu = getParameterByName('menu');
+if (menu) {
+		// $('body').removeClass('is-reveal-open');
+		// $('#menu').removeClass('displayBlock');
+
+		var id = '#menu';
+		var modal = new _foundationSites2.default.Reveal((0, _jquery2.default)('#menu'), { animationIn: "none" });
+		modal.toggle();
+		// modal.close();
+		setTimeout(function () {
+				modal.toggle();
+		}, 100);
+}
 
 /***/ }),
 /* 21 */

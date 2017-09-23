@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^(.*?)="\{\{store(.*)$ /$1$2 [L,R=301]
