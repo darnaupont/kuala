@@ -14572,46 +14572,48 @@ window.libs = _dependencies2.default;
 				onSlideLeave: function onSlideLeave(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
 		});
 });
+
 (0, _jquery2.default)(document).ready(function () {
 		(0, _jquery2.default)('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
 				(0, _jquery2.default)(this).toggleClass('open');
 		});
 });
 
-(0, _jquery2.default)(document).ready(function () {
-		// function getParameterByName(name) {
-		//     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-		//     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-		//     results = regex.exec(location.search);
-		//     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-		// }
-		//
-		// var KualalumpurV = getParameterByName('Kualalumpur');
-		//
-		// if (KualalumpurV == 'Studio') {
-		// 	alert("Hello! I am an alert box!");
-		// }
-
-		var options = { dataAnimationIn: 'fade-in', dataShowDelay: 0 };
-		var $modal = (0, _jquery2.default)('#menu'); //define your variables
-		var delay = 2000;
-
-		//check if session variable exists.
-		//If NOT then call your function.
-		if (!sessionStorage.getItem("is_already_opened_once")) {
-				modalHandler($modal, delay); //call your function
-		}
-
-		function modalHandler($modal, delay) {
-				$modal.foundation('open');
-
-				setTimeout(function () {
-						$modal.foundation('close');
-						//set the session_variable
-						sessionStorage.setItem('is_already_opened_once', true);
-				}, delay);
-		}
-});
+// $(document).ready(function() {
+// 	// function getParameterByName(name) {
+// 	//     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+// 	//     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+// 	//     results = regex.exec(location.search);
+// 	//     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+// 	// }
+// 	//
+// 	// var KualalumpurV = getParameterByName('Kualalumpur');
+// 	//
+// 	// if (KualalumpurV == 'Studio') {
+// 	// 	alert("Hello! I am an alert box!");
+// 	// }
+//
+// 	 var options = {dataAnimationIn: 'fade-in', dataShowDelay: 0};
+//    var $modal = $('#menu');//define your variables
+//    var delay = 2000;
+//
+//    //check if session variable exists.
+//    //If NOT then call your function.
+//    if (!sessionStorage.getItem("is_already_opened_once")) {
+//       modalHandler($modal,delay);//call your function
+//    }
+//
+//    function modalHandler($modal,delay){
+//       $modal.foundation('open');
+//
+//       setTimeout(function(){
+//          $modal.foundation('close');
+//          //set the session_variable
+//          sessionStorage.setItem('is_already_opened_once', true);
+//       },delay);
+//    }
+//
+// });
 (0, _jquery2.default)(document).on('open.zf.reveal', '[data-reveal]', function () {
 		(0, _jquery2.default)('.mleft').css("background-color", "transparent");
 		(0, _jquery2.default)('.mright').css("background-color", "transparent");
