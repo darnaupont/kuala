@@ -123,6 +123,7 @@ $(document).ready(function() {
 
    function modalHandler($modal,delay){
       $modal.foundation('open');
+
       setTimeout(function(){
          $modal.foundation('close');
          //set the session_variable
@@ -131,8 +132,21 @@ $(document).ready(function() {
    }
 
 });
+$(document).on(
+  'open.zf.reveal', '[data-reveal]', function () {
+		$('.mleft').css( "background-color", "transparent" );
+		$('.mright').css( "background-color", "transparent" );
+  }
+);
+$(document).on(
+	'closed.zf.reveal', '[data-reveal]', function () {
+		$('.mleft').css( "background-color", "rgba(255, 255, 255, 0.72)" );
+		$('.mright').css( "background-color", "rgba(255, 255, 255, 0.72)" );
+  }
+);
  window.addEventListener('scroll', function(e){
 	 if (window.scrollY > 10){
+
 		 $('#logotext').addClass('black');
 		 $('#logotext').removeClass('transparent');
 	 }

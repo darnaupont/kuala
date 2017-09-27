@@ -106,7 +106,7 @@ h1,h2,h3,h4,h5,h6{
 // //END PROJECTS
 
 section{
-  margin: 5em 0;
+  margin-bottom: 10rem;
   header{
     padding:1rem;
     margin-bottom:6.5rem;
@@ -125,15 +125,25 @@ section{
   }
 }
 .button{
+  font-size:1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: $white;
+    color:$primary-color;
+    border: 2px solid $primary-color;
+    &:hover{
+      background-color: $primary-color;
+    }
+  }
 .wrapper{
   @include xy-grid-container;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   @include breakpoint(medium) {
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 }
 #fullpage{
@@ -143,20 +153,8 @@ span{color: $primary-color}
     @include xy-grid-container;
     margin:0 28%;
     h1{font-size:rem-calc(38); padding-bottom:2rem;}
-    h2{text-transform: capitalize; font-size:rem-calc(26)}
+    h2{text-transform: none; font-size:rem-calc(26); font-family: 'Lora', serif;}
     span{color: $primary-color}
-    .button{
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      border: 2px solid $primary-color;
-      &:hover{
-        background-color: $white;
-        color:$primary-color;
-
-      }
-    }
-
 }
   .client{
       padding:0 2.5rem;
@@ -164,11 +162,17 @@ span{color: $primary-color}
       background: url('../../assets/img/mobile/fons.jpg') no-repeat center center;
       background-size: cover;
       h2{font-weight: 400;}
-      ul{
-        padding-top:0.5rem;
-      }
-      li{
+        ul{
+          padding-top:0.5rem;
           list-style: none;
+          margin-left:0;
+          font-size: .9rem;
+        }
+          :not(li) > ul{
+            margin-left:2rem;
+          }
+      li{
+         list-style: none;
         &:first-child{
           font-family: 'Montserrat', sans-serif;
           text-transform: uppercase;
@@ -193,7 +197,7 @@ span{color: $primary-color}
 }
 #nosotros{
   p{margin-bottom:3rem;}
-  figure{width: 8rem; margin:0 auto; padding-bottom: 2rem}
+  figure{width: 6rem; margin:0; padding-bottom: 2rem}
 }
 #projects{
   article{
@@ -204,8 +208,8 @@ span{color: $primary-color}
     background-color:$dark-gray;
     // p{  text-transform: uppercase; color: darken($light-gray, 10%);font-weight: lighter; margin-bottom:0;}
     h3,h4{color:$light-gray;
-      span:first-child{font-weight: lighter; color: darken($light-gray, 15%) }
-      span:nth-child(3){font-family: 'Lora', serif; letter-spacing: 1px;}}
+      span:first-child{font-weight: lighter; color: darken($light-gray, 15%); font-size: .8rem;}
+      span:nth-child(3){font-family: 'Lora', serif; letter-spacing: 1px;text-transform: none;}}
 
     // h5{margin-top:1rem; margin-bottom:0; font-weight: lighter;}
     a{
@@ -238,7 +242,13 @@ span{color: $primary-color}
     h2{font-weight: 400;}
     ul{
       padding-top:0.5rem;
+      list-style: none;
+      margin-left:0;
+      font-size: .9rem;
     }
+      :not(li) > ul{
+        margin-left:2rem;
+      }
     li{
         list-style: none;
       &:first-child{

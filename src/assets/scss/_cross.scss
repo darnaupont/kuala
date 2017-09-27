@@ -14,7 +14,7 @@ $escalable: 0.5;
   position: absolute;
   height: 5px * $escalable;
   width: 100%;
-  background: $primary-color;
+  background: $black;
   border-radius: 9px * $escalable;
   opacity: 1;
   left: 0;
@@ -47,7 +47,7 @@ $escalable: 0.5;
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
-  background-color: $white;
+  background-color: $black;
 }
 
 #nav-icon1.open span:nth-child(2) {
@@ -61,7 +61,7 @@ $escalable: 0.5;
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
-  background-color: $white;
+  background-color: $black;
 }
 
 /* Icon 2 */
