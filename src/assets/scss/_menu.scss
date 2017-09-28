@@ -134,17 +134,18 @@ transform: translateY(-50%);
     left:2.35rem;
     padding: 0.65rem;
     padding-top:1rem;
-    background-color: rgba(255, 255, 255, 0.72);
+    // background-color: rgba(255, 255, 255, 0.72);
   }
   .fuckyou{
     background-color: transparent;
   }
   .mright{
     position:absolute;
-    background-color: rgba(255, 255, 255, 0.72);
+    // background-color: rgba(255, 255, 255, 0.72);
     right: 2rem;
     padding-top: 2rem;
     font-family: 'Montserrat', sans-serif;
+    transition: color 1s ease;
     p{
       font-weight: bold;
       text-transform: uppercase;
@@ -161,3 +162,17 @@ transform: translateY(-50%);
 .language-active{font-weight: bold;}
 .is-reveal-open{overflow: visible !important;}
 .reveal.full {z-index: 999;}
+.colorwhite{
+  color: $white;
+}
+.colorblack{
+  color: $black;
+}
+.bgwhite{
+  transition: background-color 1s ease;
+  background-color: $white !important;
+}
+.bgblack{
+  transition: background-color 1s ease;
+  background-color: $black !important;
+}
